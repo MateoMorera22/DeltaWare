@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Login-Styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Ingreso Administradores</title>
+</head>
+
+<body>
+   
+
+    <!-- Formulario de Escritorio -->
+    <div class="loginBrick z-depth-5 hide-on-small-only"> 
+        <div class="row d-flex justify-content-center align-items-center">
+           <!-- <form id="loginFormAdmin" action="login_admin.php" method="POST">-->
+                 <!-- Corrección del action y eliminación de duplicado -->
+                   
+                 <div id="LogoDiv" class="col s12 m12 l12 center-align">
+                    <img id="imgLogo" class="responsive-img" src="../img/LogoDeltaWare.png" alt="Logo DeltaWare">
+                  </div>
+
+                <div id="LoginTitle" class="col s12 m12 l12 center-align">
+                    <h5 id="TxtLoginTitle">Bienvenido</h5>
+                </div>
+                 
+                <div class="col l2"></div>
+                <div class="input-field col l8">
+                    <input id="email" name="email" type="email" class="validate color-changing-line" required>
+                    <label for="email" class="color-changing-label">Email</label>
+                </div>
+                <div class="col l2"></div>
+                <div class="col l12"></div>
+                
+         
+                <div class="col l2"></div>
+                <div class="input-field col l8">
+                    <input id="password" name="password" type="password" class="validate color-changing-line" required>
+                    <label for="password" class="color-changing-label">Password</label>
+                </div>
+                <div class="col l2"></div>
+                <div class="col l12"></div>
+
+                <div class="col l2"></div>
+                    <div class="input-field col l8">
+                        <select>
+                          <option value="1">Operador</option>
+                          <option value="2">Adminsitrador</option>
+                        </select>
+                        <label>Seleccion de Rol</label>
+                      </div>
+                      <div class="col l2"></div>
+                </div>
+               
+                <!--Cambiar a buttom para agregar logica-->
+                <div class="buttomLogin col s12">
+                    <a href="Admin.html" type="submit" id="loginButtom" class="waves-effect waves-light btn z-depth-0 btn-large">
+                        <i class="material-icons right">login</i>Ingresar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Formulario Móvil -->
+    <div class="row hide-on-med-and-up">
+        <div class="col s12">
+            <div id="cardMovil" class="card z-depth-5">
+                <div class="card-content">
+                    <form id="loginFormMobile" action="login.php" method="POST"> <!-- Añadido el action y el id para formulario móvil -->
+                        <div class="row">
+
+                            <div id="LogoDiv" class="col s12 m12 l12 center-align">
+                                <img id="imgLogo" class="responsive-img" src="../img/LogoDeltaWare.png" alt="Logo DeltaWare">
+                              </div>
+
+                            <div id="LoginTitleMov" class="col s12 m12 l12">
+                                <h5 id="TxtLoginTitleMov"><i class="material-icons iconTitle">admin_panel_settings</i>Bienvenido</h5>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input id="emailMobile" name="email" type="email" class="validate color-changing-line" required>
+                                <label for="emailMobile" class="color-changing-label">Email</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input id="passwordMobile" name="password" type="password" class="validate color-changing-line" required>
+                                <label for="passwordMobile" class="color-changing-label">Password</label>
+                            </div>
+
+                            <div class="buttomLogin col s12">
+                                <a href="Admin.html" id="loginButtonMobile" type="submit" class="waves-effect waves-light btn color-changing-btn">
+                                    <i class="material-icons right">login</i>Ingresar
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="TextoDeltaWare hide-on-small-only">
+        <h5 id="TitoloDescript">Conoce aquí &nbsp;</h5>
+        <img id="Delwhite" src="../img/LogoDeltaWareWhite.png" alt="">
+    </div>
+    
+<div class="CuerpoTXTDeltaWare hide-on-small-only">
+    <p id="bodyText">
+        Nuestra plataforma, Deltaware, gestiona y valida incidentes de ciberseguridad de manera eficiente, utilizando una arquitectura en la nube y microservicios. Con herramientas automatizadas como SIEM, SOAR y EDR, Deltaware identifica, clasifica y responde a las amenazas de forma ágil, permitiendo a los equipos de TI reducir la carga manual y enfocarse en una gestión proactiva.
+
+El sistema automatiza la documentación y el seguimiento de incidentes, facilitando la generación de informes detallados para un análisis exhaustivo. Además, Deltaware está diseñado con un enfoque en sostenibilidad energética, optimizando los recursos para minimizar el impacto ambiental.
+
+Protege tu infraestructura, mejora la eficiencia operativa y responde rápidamente a las amenazas, todo con una solución tecnológica sostenible.
+    </p>
+</div>
+    
+</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/Login-Scripts-Admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Admin-Syles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+    <title>Gestion de incidentes</title>
+</head>
+
+<body>
+    <nav id="NavDelta">
+        <div id="NavBar" class="nav-wrapper">
+            <a id="UserName" href="#!" class="brand-logo hide-on-med-and-down"><img id="logoNav" src="../img/LogoDeltaWareWhite.png" alt=""></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a id="UserNameMov" href="#!" class="brand-logo hide-on-med-and-up"><i class="material-icons">account_circle</i>Nombre Usuario
+                </a>
+            <ul id="ListOptions" class="right hide-on-med-and-down">
+                <li><a href="mobile.html" class="dropdown-trigger" data-target="dropdown1">Nombre Usuario</Nombre> <i id="iconAcount" class="material-icons">account_circle</i></a>
+                    <!-- Dropdown Structure boton cuenta -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a id="editAcount" href="#!"><i class="material-icons">info</i>Editar cuenta</a></li>
+                        <li><a id="Logout" href="Login-Admin.html"><i class="material-icons">logout</i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                    <!-- Dropdown Structure  boton cuenta -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Opciones navbar Movil-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a id="editAcount" href="#!"><i class="material-icons">info</i>Editar cuenta</a></li>
+        <li><a id="Logout" href="Login-Admin.html"><i class="material-icons">logout</i> Cerrar sesión</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col s0 m2 l2"></div>
+
+
+
+<div class="boxcard">
+    <div class="btnboxMov hide-on-med-and-up">
+        <a data-target="modal2" id="list_incidents" class="btn-floating btn-small waves-effect waves-light tooltipped btn modal-trigger" 
+        data-position="bottom" data-tooltip="Crear un nuevo incidente">
+            <span class="material-symbols-outlined ">siren_open</span></a>
+
+        <a data-target="modalMov" id="GestUser" class="btn-floating btn-small waves-effect waves-light tooltipped modal-trigger" 
+        data-position="top" data-tooltip="Gestion de usuarios" ><i class="material-icons">group</i></a>
+    </div>
+    
+        <div id="TarjetaNotesContainer" class="col s12 m8 l8">
+            <div id="TarjetaMsj" class="card z-depth-2 TarjetaCalificationsRad">
+                <div class="btnbox hide-on-med-and-down">
+
+                    <a data-target="modal2" id="list_incidents" class="btn-floating btn-small waves-effect waves-light tooltipped btn modal-trigger" 
+                    data-position="bottom" data-tooltip="Crear un nuevo incidente">
+                        <span class="material-symbols-outlined ">siren_open</span></a>
+
+                    <a data-target="modal1" id="GestUser" class="btn-floating btn-small waves-effect waves-light tooltipped modal-trigger" 
+                    data-position="top" data-tooltip="Gestion de usuarios" ><i class="material-icons">group</i></a>
+
+                </div>
+                <div class="card-content">
+                    <span id="TitloCard" class="card-title "><i
+                            class="material-icons iconTam"><span class="card-title"><span class="material-symbols-outlined ">
+                                siren
+                        </span> </i>Gestion de incidentes</span>
+                    </h1> </i>Listado incidentes pendientes</h1>
+                    <ul id="msjContainer" class="collapsible"> 
+                        <li>
+                            <div class="collapsible-header">
+
+                                <div class="titlecontainer hide-on-med-and-down">
+                                    <i class="material-icons">security</i>Nombre Incidente |
+                                 Fecha de creación: 00/00/0000 |  ID : ID10001 
+                                </div>
+
+                                <div class="titlecontainerMov hide-on-med-and-up">
+                                    <i class="material-icons">security</i>Nombre Incidente |
+                                    Fecha de creación: 00/00/0000 |  ID : ID10001 
+                                
+                                 
+                                 <div class="btnmsjcontainerMov hide-on-med-and-up">
+                                    <a id="btnmCalificationsMov" class="waves-effect waves-light btn btn-small tooltipped" data-position="right" data-tooltip="Cerrar incidencia"><i
+                                        class="material-icons right">check_circle</i>Cerrar incidencia</a>
+                                </div>
+                                </div>
+
+                                <div class="btnmsjcontainer hide-on-med-and-down">
+                                    <a id="btnmCalificationsHead" class="btn-floating btn-small waves-effect waves-light tooltipped" data-position="right" data-tooltip="Cerrar incidencia" ><i class="material-icons">check_circle</i></a>
+                                </div>
+                                </div>
+                            <div class="collapsible-body">
+                            </span>Descripción de la incidencia:</span><br></br>
+                            <p>
+                                Se ha detectado un acceso no autorizado a la red interna de la organización mediante una cuenta comprometida. El atacante logró eludir las medidas de autenticación de dos factores (2FA) mediante un ataque de phishing dirigido al personal del departamento de TI. Tras obtener las credenciales, el atacante obtuvo acceso a servidores críticos, lo que pone en riesgo la integridad de datos sensibles y puede haber afectado la confidencialidad de información de clientes y empleados.
+                                Fecha de detección: 2024-11-28
+                                ID del incidente: INC-2024-0001
+                                Estado: En proceso de mitigación
+                                Impacto potencial: Alto
+                                Área afectada: Red interna / Servidores de archivos / Base de datos de clientes
+                            </p>
+                                <div class="buttonContainer">
+                                    <a id="btnmCalifications" class="waves-effect waves-light btn"><i
+                                            class="material-icons right">check_circle</i>Cerrar incidencia</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+      <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Gestion de usuarios</h4>
+      <div id="FormsModalIncident" class="div">
+        <!-- Fila de formularios -->
+        <div class="row">
+            <div class="form-container col s12 l5">
+                <!-- Primer formulario de selección -->
+                <span>Usuarios y Roles</span>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Seleccione usuario</label>
+                </div>
+    
+                <!-- Segundo formulario de selección -->
+                <div class="input-field col s12">
+                    <select>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Seleccione Rol</label>
+                </div>
+    
+                <!-- Aquí puedes agregar más formularios si es necesario -->
+            </div>
+    
+            <!-- Checkbox de permisos alineado horizontalmente -->
+            <div class="chekPermisos col s6 l3">
+                <span>Permisos</span>
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            </div>
+
+            <div class="chekPermisos col s6 l3">
+                <span>Permisos</span>   
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a id="btnmCalifications" class="waves-effect waves-light btn moverbtn"><i
+            class="material-icons right">person_add</i>Gestionar usuario</a>
+    </div>
+  </div>
+  
+   <!--Modales movil-->
+
+   <div id="modalMov" class="modal">
+    <div class="modal-content">
+      <h4>Gestion de usuarios</h4>
+      <div id="FormsModalIncident" class="div">
+        <!-- Fila de formularios -->
+        <div class="row">
+            <div class="form-container col s12 l5">
+                <!-- Primer formulario de selección -->
+                <span>Usuarios y Roles</span>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Seleccione usuario</label>
+                </div>
+    
+                <!-- Segundo formulario de selección -->
+                <div class="input-field col s12">
+                    <select>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Seleccione Rol</label>
+                </div>
+    
+                <!-- Aquí puedes agregar más formularios si es necesario -->
+            </div>
+    
+            <!-- Checkbox de permisos alineado horizontalmente -->
+            <div class="chekPermisos col s6 l3">
+                <span>Permisos</span>
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            </div>
+
+            <div class="chekPermisos col s6 l3">
+                <span>Permisos</span>   
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+
+                <p class="checkleft">
+                    <label>
+                        <input type="checkbox" />
+                        <span>Permiso prueba</span>
+                    </label>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <a id="btnmCalifications" class="waves-effect waves-light btn moverbtn"><i
+            class="material-icons right">person_add</i>Gestionar usuario</a>
+    </div>
+  </div>
+   
+
+    <!--Modales movil-->
+      
+
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Crear un nuevo incidente</h4>
+       <div class="row">
+
+         <div class="input-field col s12 l6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Nombre de incidencia</label>
+        </div>
+
+        <div class="input-field col s6 l3">
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Severidad</label>
+        </div>
+
+    
+        <div class="input-field col s6 l3">
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Triage</label>
+        </div>
+
+        <div class="input-field col s12">
+            <i class="material-symbols-outlined prefix">siren_question</i>
+            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <label for="icon_prefix2">Descripción incidente</label>
+          </div>
+       </div>
+
+       
+
+        </div>
+        <div class="modal-footer">
+            <a id="btnmCalifications" class="waves-effect waves-light btn moverbtn">
+                <i class="material-symbols-outlined right">siren_question</i>Gestionar incidente</a>
+        </div>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="../js/Login-Scripts-Admin.js"></script>
+</body>
+
+</html>

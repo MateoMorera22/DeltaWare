@@ -1,0 +1,309 @@
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+
+body{
+    height: 100%;
+}
+
+#logoNav{
+    margin-top: 17px;
+    margin-left: 30px;
+    max-width: 60%;  /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; 
+}
+
+#iconAcount{
+    margin-left: 10px;
+}
+
+#LogoDiv{
+    margin-top:30px;
+  }
+
+#NavDelta{
+    background-color: #774ef5;
+    margin-bottom: 30px;
+}
+
+#UserNameMov {
+    font-size: 15px; /* Tamaño del texto del botón */
+}
+
+.colorHover:hover{
+background-color: #ffaa00;
+color: #4a0dd8;
+}
+
+.iconspaceNav{
+    margin-left: 10px;
+    font-size: 45px !important;
+}
+
+
+#ListOptions li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+      width: 250px;
+}
+
+
+#description{
+    text-align: justify;
+}
+
+.btncontainer{
+    height: 40px;
+    width: 100%;
+}
+
+#btnCursos{
+    background-color: #d80dca;
+    float: right;
+    border-radius: 20px;
+}
+
+#cardCurso{
+    border-radius: 15px;
+    background-color: #4a0dd8;
+}
+
+#cardCurso .card-action{
+    border-top: #d80dca solid 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#editAcount{
+    background-color:#5019f6 ;
+    color: white;
+}
+
+#Logout{
+    background-color:#c34949;
+    color: white; 
+}
+
+#eventMov{
+    color: white;
+    background-color: #3b90be;
+}
+
+#messages{
+    color: white;
+    background-color: #ffaa00;
+}
+
+body{
+    background-color: #dbdbdb;
+    height: 100%;
+    width: 100%;
+}
+
+
+#TarjetaMsj{
+border-radius: 20px;
+}
+
+.iconspaceNav{
+    margin-right: 10px;
+    font-size: 30px !important;
+}
+
+#TarjetaMsjContainer{
+    margin-top: 50px;
+}
+
+#TitloCard{
+    font-size: 30px;
+}
+
+.buttonContainer{
+    
+    height: 50px;
+    width: 100%;
+}
+
+#btnMsj{
+    margin-top: 20px;
+    background-color: #d80dca;
+    border-radius: 20px;
+}
+
+
+.iconTam{
+    margin-right: 10px;
+    font-size: 50px !important;
+}
+
+.TarjetaCalificationsRad{
+    border-radius: 20px;
+}
+
+#TarjetaNotesContainer{
+    margin-top: 00px;
+}
+
+.btnbox{
+    float: right;
+}
+
+.btnboxMov{
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.btnboxMov a{
+    margin-left: 12px;
+}
+
+
+.btnbox a{
+margin-top: 10px;
+margin-right: 10px;
+}
+
+
+#list_incidents{
+background-color: #c07f46;
+}
+
+#list_incidents span{
+    margin-top: 3px;
+}
+
+#GestUser{
+    background-color: #4a82aa;
+}
+
+#Anuncios:hover{
+background-color: #ffaa00;
+}
+
+#list_incidents:hover{
+    background-color: #4a0dd8;  
+}
+
+#GestUser:hover{
+    background-color: #a64ba0;
+}
+
+#btncal1{
+    float: right;
+}
+
+.titlecontainer{
+    width: 90%;
+}
+
+.titlecontainerMov{
+    width: 100%;
+    text-align: justify;
+}
+    
+.btnmsjcontainer{
+    text-align: right;
+    width: 10%;
+}
+
+.btnmsjcontainerMov{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: right;
+    width: 100%;
+}
+
+.btnmsjcontainer a{
+    background-color: #7bb880;;
+}
+
+.collapsible-body p{
+    text-align: justify;
+}
+
+#btnmCalifications{
+    margin-top: 20px;
+    background-color: #7bb880;
+    border-radius: 20px;
+}
+
+#btnmCalificationsMov{
+    margin-top: 20px;
+    background-color: #7bb880;
+    border-radius: 20px;
+    padding-right: 0;
+}
+
+#btnmCalificationsHeadMov{
+    margin-top: 20px;
+    background-color: #7bb880;
+}
+
+#modal1{
+    width: 1000px;
+    border-radius: 20px;
+    height: 600px;
+}
+
+#modal2{
+    border-radius: 20px;
+    height: 380px;
+}
+
+#modalMov{
+    width: 100%;
+}
+
+.moverbtn{  
+    margin-right: 10px !important;
+}
+
+#FormsModalIncident{
+    width: 100%;
+}
+.chekPermisos{
+    display: flex;              
+    flex-direction: column;    
+    justify-content: flex-start;
+}
+
+.checkleft {
+    margin-bottom: 10px;         
+}
+
+.form-container {
+    display: flex;             
+    flex-direction: column;   
+    justify-content: flex-start; 
+    gap: 20px; 
+}
+
+.input-field {
+    margin-bottom: 20px;       /* Espacio entre cada formulario si es necesario */
+}
+
+#FormsModalIncident{
+    margin-top: 50px;
+}
+
+.form-container{
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

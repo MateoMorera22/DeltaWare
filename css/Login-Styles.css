@@ -1,0 +1,175 @@
+body{
+    background-image: url("../img/DeltaLoginWall.jpg");
+    background-size: cover;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+  }
+
+*{ font-family: "Raleway", sans-serif;}
+
+.loginBrick{
+    padding: 50px;
+    float: right;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+#TitoloDescript{
+  margin-left: 50px;
+ color: white;
+ font-size: 30px;
+}
+
+#Delwhite{
+margin: 0px;
+display: block;  /* Evita el espacio debajo de la imagen */
+margin: 0;       /* Elimina cualquier margen */
+padding: 0;      /* Elimina cualquier relleno */
+border: none;
+}
+
+.deltaText{
+  margin-top: 50px;
+  float: left;
+  width: 6%;
+  height: 100px;
+  background-color: #774ef5;
+  margin-left: 50px;
+}
+
+#textoDelta{
+  float: left;
+}
+
+.TextoDeltaWare{
+  display: flex;                /* Usamos flexbox para alineación horizontal */
+  align-items: end;          /* Alinea verticalmente al centro (para que no se desplace hacia abajo) */
+  justify-content: flex-start; 
+  float: left;
+  height: 35%;
+  width: 60%;
+}
+
+
+.CuerpoTXTDeltaWare{
+  text-align: justify;
+  margin-left: 50px;
+  float:left;
+  height: 65%;
+  width: 45%;
+  margin-top: 10px;
+}
+
+#cardMovil{
+  margin-top: 100px;
+}
+
+#bodyText{
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+#LogoDiv{
+  margin-top:30px;
+}
+
+#imgLogo{
+  width: 210px;
+  height: 50px;
+}
+
+
+#LoginTitle{
+    margin-top: 50px;
+    height: 100px;
+}
+
+#LoginTitleMov{
+    height: 100px;
+    margin-top: 50px;
+}
+
+
+#TxtLoginTitle{
+    font-size:25px;
+    font-weight: 550; 
+    color: rgb(187, 187, 187);
+}
+
+
+#TxtLoginTitleMov{
+    font-size: 30px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: flex-end; 
+}
+
+
+
+  .buttomLogin{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: flex-top; 
+  }
+
+
+#loginButtom{
+margin-top: 40px;
+background-color: #774ef5;
+border-radius: 35px;
+}
+
+#loginButtonMobile{
+  background-color: #774ef5;
+  border-radius: 20px;
+}
+
+input.validate:focus, 
+textarea.validate:focus {
+    border-bottom: 1px solid #774ef5 !important;
+    box-shadow: 0 1px 0 0 #774ef5 !important;
+}
+
+/* Cambiar el color de la etiqueta cuando el campo está enfocado */
+input.validate:focus + label, 
+textarea.validate:focus + label {
+    color: #774ef5 !important;
+}
+
+/* Cambiar el color de la línea en el estado normal del input */
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+textarea {
+    border-bottom: 1px solid #774ef5 !important;
+}
+
+#RegisterButtom{
+  border-radius: 20px;
+  }
+
+#backhome{
+    margin: 30px;
+    background-color: #774ef5;
+}
+
+#cardMovil{
+    border-radius: 20px;
+}
+
+#TxtLoginTitle i{
+font-size: 50px;
+margin-right: 15px;
+}
+
+#TxtLoginTitleMov i{
+    font-size: 40px;
+    margin-right: 15px;
+    }
