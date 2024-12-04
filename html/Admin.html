@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   
-    <title>Gestion de incidentes</title>
+    <title>Gestion de eventos</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
 <div class="boxcard">
     <div class="btnboxMov hide-on-med-and-up">
         <a data-target="modal2" id="list_incidents" class="btn-floating btn-small waves-effect waves-light tooltipped btn modal-trigger" 
-        data-position="bottom" data-tooltip="Crear un nuevo incidente">
+        data-position="bottom" data-tooltip="Crear un nuevo evento">
             <span class="material-symbols-outlined ">siren_open</span></a>
 
         <a data-target="modalMov" id="GestUser" class="btn-floating btn-small waves-effect waves-light tooltipped modal-trigger" 
@@ -62,7 +62,7 @@
                 <div class="btnbox hide-on-med-and-down">
 
                     <a data-target="modal2" id="list_incidents" class="btn-floating btn-small waves-effect waves-light tooltipped btn modal-trigger" 
-                    data-position="bottom" data-tooltip="Crear un nuevo incidente">
+                    data-position="bottom" data-tooltip="Crear un nuevo evento">
                         <span class="material-symbols-outlined ">siren_open</span></a>
 
                     <a data-target="modal1" id="GestUser" class="btn-floating btn-small waves-effect waves-light tooltipped modal-trigger" 
@@ -73,45 +73,45 @@
                     <span id="TitloCard" class="card-title "><i
                             class="material-icons iconTam"><span class="card-title"><span class="material-symbols-outlined ">
                                 siren
-                        </span> </i>Gestion de incidentes</span>
-                    </h1> </i>Listado incidentes pendientes</h1>
+                        </span> </i>Gestion de eventos</span>
+                    </h1> </i>Listado eventos pendientes</h1>
                     <ul id="msjContainer" class="collapsible"> 
                         <li>
                             <div class="collapsible-header">
 
                                 <div class="titlecontainer hide-on-med-and-down">
-                                    <i class="material-icons">security</i>Nombre Incidente |
+                                    <i class="material-icons">security</i>Nombre evento |
                                  Fecha de creación: 00/00/0000 |  ID : ID10001 
                                 </div>
 
                                 <div class="titlecontainerMov hide-on-med-and-up">
-                                    <i class="material-icons">security</i>Nombre Incidente |
+                                    <i class="material-icons">security</i>Nombre evento |
                                     Fecha de creación: 00/00/0000 |  ID : ID10001 
                                 
                                  
                                  <div class="btnmsjcontainerMov hide-on-med-and-up">
-                                    <a id="btnmCalificationsMov" class="waves-effect waves-light btn btn-small tooltipped" data-position="right" data-tooltip="Cerrar incidencia"><i
-                                        class="material-icons right">check_circle</i>Cerrar incidencia</a>
+                                    <a id="btnmCalificationsMov" class="waves-effect waves-light btn btn-small tooltipped" data-position="right" data-tooltip="Cerrar evento"><i
+                                        class="material-icons right">check_circle</i>Cerrar evento</a>
                                 </div>
                                 </div>
 
                                 <div class="btnmsjcontainer hide-on-med-and-down">
-                                    <a id="btnmCalificationsHead" class="btn-floating btn-small waves-effect waves-light tooltipped" data-position="right" data-tooltip="Cerrar incidencia" ><i class="material-icons">check_circle</i></a>
+                                    <a id="btnmCalificationsHead" class="btn-floating btn-small waves-effect waves-light tooltipped" data-position="right" data-tooltip="Cerrar evento" ><i class="material-icons">check_circle</i></a>
                                 </div>
                                 </div>
                             <div class="collapsible-body">
-                            </span>Descripción de la incidencia:</span><br></br>
+                            </span>Descripción del evento:</span><br></br>
                             <p>
                                 Se ha detectado un acceso no autorizado a la red interna de la organización mediante una cuenta comprometida. El atacante logró eludir las medidas de autenticación de dos factores (2FA) mediante un ataque de phishing dirigido al personal del departamento de TI. Tras obtener las credenciales, el atacante obtuvo acceso a servidores críticos, lo que pone en riesgo la integridad de datos sensibles y puede haber afectado la confidencialidad de información de clientes y empleados.
                                 Fecha de detección: 2024-11-28
-                                ID del incidente: INC-2024-0001
+                                ID del evento: INC-2024-0001
                                 Estado: En proceso de mitigación
                                 Impacto potencial: Alto
                                 Área afectada: Red interna / Servidores de archivos / Base de datos de clientes
                             </p>
                                 <div class="buttonContainer">
                                     <a id="btnmCalifications" class="waves-effect waves-light btn"><i
-                                            class="material-icons right">check_circle</i>Cerrar incidencia</a>
+                                            class="material-icons right">check_circle</i>Cerrar evento</a>
                                 </div>
                             </div>
 
@@ -370,12 +370,12 @@
     <!-- Modal Structure -->
     <div id="modal2" class="modal">
         <div class="modal-content">
-          <h4>Crear un nuevo incidente</h4>
+          <h4>Crear un nuevo evento</h4>
        <div class="row">
 
          <div class="input-field col s12 l6">
           <input id="last_name" type="text" class="validate">
-          <label for="last_name">Nombre de incidencia</label>
+          <label for="last_name">Nombre de evento</label>
         </div>
 
         <div class="input-field col s6 l3">
@@ -400,7 +400,7 @@
         <div class="input-field col s12">
             <i class="material-symbols-outlined prefix">siren_question</i>
             <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-            <label for="icon_prefix2">Descripción incidente</label>
+            <label for="icon_prefix2">Descripción evento</label>
           </div>
        </div>
 
@@ -409,7 +409,7 @@
         </div>
         <div class="modal-footer">
             <a id="btnmCalifications" class="waves-effect waves-light btn moverbtn">
-                <i class="material-symbols-outlined right">siren_question</i>Gestionar incidente</a>
+                <i class="material-symbols-outlined right">siren_question</i>Gestionar evento</a>
         </div>
       </div>
 
